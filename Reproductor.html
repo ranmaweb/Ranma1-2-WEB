@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranma 1/2 - REPRODUCTOR</title>
+    <link rel="stylesheet" href="CSS.css">
+    <script defer src="JS/JsReproductor.js"></script>
+    <link rel="icon" href="PChanicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-image: url('Gif/Zetai.gif');
+            background-size: cover; /* Ajusta el GIF al tamaño de la pantalla */
+            background-position: center; /* Centra el GIF */
+            margin: 0;
+            height: 100vh; /* Asegura que el fondo cubra toda la altura */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎬 Reproductor de Video</h1>
+
+<!-- Contenedor centrado -->
+<div id="serverContainer">
+    <label for="serverSelector">Seleccionar servidor:</label>
+    <select id="serverSelector">
+        <option value="uqload">Uqload</option>
+        <option value="mega">Mega</option>
+    </select>
+</div>
+
+    
+    
+    <div class="container">
+        <h2 id="episodeTitle">Episodio no encontrado</h2>
+
+        <!-- Reproductor de Video -->
+        <iframe id="videoPlayer" width="100%" height="500px" frameborder="0" allowfullscreen></iframe>
+
+        <br>
+        <div class="controls">
+            <button id="prevEpisode">⏪ Episodio Anterior</button>
+            <button id="nextEpisode">Episodio Siguiente ⏩</button>
+        </div>
+
+        <br>
+        <a href="index.html">Volver a la Lista de Episodios</a>
+    </div>
+</body>
+</html>
